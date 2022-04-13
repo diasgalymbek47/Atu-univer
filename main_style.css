@@ -1,0 +1,146 @@
+/* !!! Для всех */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: calc(var(--index) * .8);
+    font-family: 'Montserrat', sans-serif;
+    color: #595959;
+}
+
+:root {
+    --index: calc(1vw + 1vh);
+    --y_distance: calc(var(--index) * 5);
+    --distance_50px: calc(var(--index) * 2);
+    --distance_25px: calc(var(--index) * 1);
+    --distance_15px: calc(var(--index) * 0.7);
+    --distance_10px: calc(var(--index) * 0.5);
+}
+
+body {
+    background: #FFF0F5;
+}
+
+.wrapper {
+    min-width: 100%;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+#item_right {
+    margin-left: auto;
+}
+
+#item_left {
+    margin-right: auto;
+}
+
+#name{
+    font-size: calc(var(--index) * 1);
+    padding: 5px 0px;
+}
+
+#text{
+    font-size: calc(var(--index) * .8);
+    padding: var(--distance_25px) 0px;
+}
+
+#date{
+    font-size: calc(var(--index) * .6);
+    padding: var(--distance_50px) 0px;
+}
+
+/**/
+
+
+/*Шапка*/
+.nav {
+    background: #ffffff;
+    padding: var(--distance_10px) 0px;
+    border-bottom: 1px solid #595959;
+    position: fixed;
+    min-width: 100%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu li a img {
+    width: calc(var(--index) * 4);
+}
+
+.menu li {
+    margin: 0px var(--distance_25px);
+}
+
+.sign_in{
+    display: flex;
+    align-items: center;
+    margin-right: var(--distance_25px);
+}
+
+.sign_in li{
+    margin: 0px;
+}
+
+.sign_in img{
+    width: calc(var(--index) * 2);
+}
+/**/
+
+/*Section*/
+    .section{
+        margin: 0px var(--distance_25px);
+    }
+
+    .section .container{
+        padding: var(--y_distance) 20px 20px 20px;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+    }
+
+    .content_box{
+        padding: var(--distance_15px);
+        margin-bottom: var(--distance_50px);
+        background: #FFF0F5;
+        border-radius: 5px;
+    }
+
+    .box_header{
+        border-bottom: 1px solid #595959;
+    }
+/**/
+
+/*Footer*/
+    .footer{
+        margin: 0px var(--distance_25px);
+    }
+
+    .footer .container{
+        background: #000000;
+        padding: 20px;
+        box-shadow: 1px 5px 10px 1px rgba(255, 0, 0, 0.5);
+        border-radius: 0px 0px 10px 10px;
+        margin-bottom: var(--distance_50px);
+    }
+
+    .link{
+        display: flex;
+        align-items: center;
+        padding: 20 0px;
+        background: #000000;
+    }
+
+    .link li a{
+        color: #7B68EE;
+    }
+/**/
